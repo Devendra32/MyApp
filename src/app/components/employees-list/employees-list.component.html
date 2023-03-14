@@ -1,0 +1,21 @@
+
+<div class="card">
+    <h5 class="text-center">LIST OF EMPLOYEES</h5>
+    <p-table [columns]="cols" [value]="employees" [scrollable]="true" scrollHeight="90vh" [virtualScroll]="true" 
+        [virtualScrollItemSize]="120">
+        <ng-template pTemplate="header" let-columns>
+            <tr>
+                <th *ngFor="let col of columns" >
+                    {{col.header}}
+                </th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-rowData let-rowIndex="rowIndex" let-columns="columns">
+            <tr style="height:auto">
+                <td *ngFor="let col of columns">
+                    {{rowData[col.field]}}
+                </td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>

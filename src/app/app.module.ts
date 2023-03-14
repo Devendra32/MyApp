@@ -3,14 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AccordionModule } from 'primeng/accordion';
+import { EmployeesListComponent } from './components/employees-list/employees-list.component';
+import { TableModule } from 'primeng/table'
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EmployeesListComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AccordionModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
