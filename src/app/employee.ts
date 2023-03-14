@@ -19,4 +19,10 @@ export interface Employee {
     supervisor: String
     favorite_color: String
     language: String
+    column21: String
+    column22: String
+    column23: String
+    column24: String
+    column25: String
+    column26: String
 }
